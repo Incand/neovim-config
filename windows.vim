@@ -33,6 +33,14 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
+" Window switching with Alt
+tnoremap <A-r> <C-\><C-N><C-w>r<C-w>h
+tnoremap <A-R> <C-\><C-N><C-w>R<C-w>l
+inoremap <A-r> <C-\><C-N><C-w>r<C-w>h
+inoremap <A-R> <C-\><C-N><C-w>R<C-w>l
+nnoremap <A-r> <C-w>r<C-w>h
+nnoremap <A-R> <C-w>R<C-w>l
+
 " Window splitting
 tnoremap <A-v><A-ENTER> <C-\><C-N><C-w>v<C-w>l
 inoremap <A-v><A-ENTER> <C-\><C-N><C-w>v<C-w>l
