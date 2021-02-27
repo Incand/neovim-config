@@ -1,10 +1,14 @@
 " No line numbering in terminal and no sign column
 autocmd TermOpen * setlocal nonumber norelativenumber scl=no
 
+" Always enter insert mode in terminals
+autocmd TermOpen * startinsert
+autocmd BufEnter term://* startinsert
+
 " Start terminal with Alt Enter
-tnoremap <A-Enter> <C-\><C-N><C-w>s<C-w>j :term<CR>i
-inoremap <A-Enter> <C-\><C-N><C-w>s<C-w>j :term<CR>i
-nnoremap <A-Enter> <C-w>s<C-w>j :term<CR>i
+tnoremap <A-Enter> <C-\><C-N>:bel vs +term<CR>
+inoremap <A-Enter> <C-\><C-N>:bot 16sp +term<CR>
+nnoremap <A-Enter> :bot 16sp +term<CR>
 
 " Escape for terminal normal mode
 tnoremap <Esc> <C-\><C-n>
