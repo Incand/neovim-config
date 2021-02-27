@@ -4,6 +4,7 @@ set number
 
 let g:AutoPairsMapCR=0
 
+source ~/.config/nvim/windows.vim
 source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/onedark.vim
