@@ -11,7 +11,7 @@ inoremap <A-Enter> <C-\><C-N>:bot 16sp +term<CR>
 nnoremap <A-Enter> :bot 16sp +term<CR>
 
 " Escape for terminal normal mode
-tnoremap <Esc> <C-\><C-n>
+tnoremap <C-ü><C-n> <C-\><C-n>
 
 " i3 analogous with Alt key
 " Window closing
